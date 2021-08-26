@@ -4,7 +4,6 @@ var app = express()
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 const { add, query, remove, update } = require('../controllers/staffs')
-/* GET staffs listing. */
 router.post('/add', add);
 router.get('/query', query)
 router.delete('/remove', remove)
